@@ -20,8 +20,8 @@
             <nav class="nav">
                 <img src="./images/logo/Booki.png" class="bookiLogo" />
                 <ul class="listHref">
-                    <li class="href-item"><a href="" class="href-link">Hébergements</a></li>
-                    <li class="href-item"><a href="" class="href-link">Activités</a></li>
+                    <li class="href-item"><a href="#hebergement" class="href-link">Hébergements</a></li>
+                    <li class="href-item"><a href="#activites" class="href-link">Activités</a></li>
                 </ul>
             </nav>
             <div class="mission">
@@ -33,19 +33,22 @@
                 <form>
                     <input type="text" name="city" id="city" placeholder="Entrer une ville" required />
                 </form>
-                <button type="submit" id="btnSearch">RECHERCHER</button>
+                <button type="submit" id="btnSearch">
+                    <span>Rechercher</span>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
             </div>
             <div class="filter">
-                <h2>Filtres</h2>
+                <h2 class="filt">Filtres</h2>
                 <div class="listBtnFilters">
-                    <button type="button" class="btnFilter"><i class="fa-solid fa-money-bill-wave"></i><h2>Économique</h2></button>
-                    <button type="button" class="btnFilter"><i class="fa-solid fa-person"></i>
+                    <button type="button" class="btnFilter" id="btnEconomique"><i class="fa-solid fa-money-bill-wave"></i><h2>Économique</h2></button>
+                    <button type="button" class="btnFilter" id="btnFamilial"><i class="fa-solid fa-person"></i>
                         <h2>Famillial</h2>
                     </button>
-                    <button type="button" class="btnFilter"><i class="fa-solid fa-heart"></i>
+                    <button type="button" class="btnFilter" id="btnRomantique"><i class="fa-solid fa-heart"></i>
                         <h2>Romantique</h2>
                     </button>
-                    <button type="button" class="btnFilter"><i class="fa-solid fa-fire"></i>
+                    <button type="button" class="btnFilter" id="btnPepites"><i class="fa-solid fa-fire"></i>
                         <h2>Nos pépites</h2>
                     </button>
                 </div>
@@ -59,7 +62,7 @@
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
                     <div class="hebergements-title">
-                        <h2 class="section-title">Hébergements à Marseille</h2>
+                        <h2 class="section-title" id="hebergement">Hébergements à Marseille</h2>
                     </div>
                     <div class="hebergements-cards">
                         <a href="#">
@@ -249,7 +252,7 @@
             </div>
         </main>
         <section class="activities">
-            <h3>Activités à Marseille</h3>
+            <h3 id="activites">Activités à Marseille</h3>
             <div class="listPointKey">
                 <a href="">
                     <article class="card">
@@ -302,26 +305,42 @@
             </div>
         </section>
         <footer>
-            <div class="about">
-                <h4>À propos</h4>
-                <div class="listAbout">
-                    <a href=""><p>Fonctionnement du site</p></a>
-                    <a href=""><p>Conditions générales</p></a>
-                    <a href=""><p>Données et confidentialité</p></a>
+            <div class="listFooter">
+                <div class="about">
+                    <h4>À propos</h4>
+                    <div class="listAbout">
+                        <a href="">
+                            <p>Fonctionnement du site</p>
+                        </a>
+                        <a href="">
+                            <p>Conditions générales</p>
+                        </a>
+                        <a href="">
+                            <p>Données et confidentialité</p>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="accommodation">
-                <h4>Nos hébergements</h4>
-                <div class="listAccommodation">
-                    <a href=""><p>Charte qualité</p></a>
-                    <a href=""><p>Proposer votre hotel</p></a>
+                <div class="accommodation">
+                    <h4>Nos hébergements</h4>
+                    <div class="listAccommodation">
+                        <a href="">
+                            <p>Charte qualité</p>
+                        </a>
+                        <a href="">
+                            <p>Proposer votre hotel</p>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="help">
-                <h4>Assistance</h4>
-                <div class="listHelp">
-                    <a href=""><p>Centre d'aide</p></a>
-                    <a href=""><p>Nous contacter</p></a>
+                <div class="help">
+                    <h4>Assistance</h4>
+                    <div class="listHelp">
+                        <a href="">
+                            <p>Centre d'aide</p>
+                        </a>
+                        <a href="">
+                            <p>Nous contacter</p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </footer>
