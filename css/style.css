@@ -187,7 +187,7 @@ nav {
   align-items: center; 
   border-radius: 25px;
   border: 1px solid #d9d9d9; 
-  padding: 10px 10px; 
+  padding: 10px 15px; 
   cursor: pointer; 
 }
 
@@ -211,7 +211,7 @@ nav {
   margin-right: 10px; 
 }
 
-.btnFilter h2 {
+.btnFilter span {
   font-size: 1.2em; 
   margin: 0; 
 }
@@ -286,7 +286,6 @@ a {
 .hebergements {
   width: 65%;
   height: 640px;
-  padding-bottom: -40px;
   margin: 0 auto;
 }
 
@@ -518,6 +517,12 @@ footer {
     margin-right: 5px;
   }
 
+  /* Filter */
+  .btnFilter span {
+    font-size: 1.1em; 
+    margin-top: -3px;
+  }
+
   /* Hebergements */
   .hebergements-and-populaires {
     display: flex;
@@ -590,7 +595,7 @@ footer {
   /* Location */
   #city {
     height: 38px;
-    width: 130px;
+    width: 80px;
   }
 
   #btnSearch {
@@ -878,18 +883,18 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 17px;
-    margin-left: 0px;
+    margin-left: 10px;
   }
 
   .btnFilter {
     width: 100%;
     justify-content: flex-start;
     text-align: center;
-    padding: 10px 20px;
+    padding: 10px 15px;
   }
 
-  .btnFilter h2 {
-    font-size: 1.2em; 
+  .btnFilter span {
+    font-size: 1.3em; 
   }
 
   .fa-heart, .fa-money-bill-wave, .fa-person, .fa-fire {
@@ -981,7 +986,7 @@ footer {
   /* Activités */
   .activities {
     margin-top: -100px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
   }
 
   .listPointKey {
@@ -1242,7 +1247,7 @@ footer {
     padding: 10px 15px;
   }
 
-  .btnFilter h2 {
+  .btnFilter span {
     font-size: 1.0em; 
   }
 

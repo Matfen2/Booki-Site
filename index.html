@@ -18,7 +18,7 @@
     <div class="main-container">
         <header>
             <nav class="nav">
-                <img src="./images/logo/Booki.png" class="bookiLogo" />
+                <img src="./images/logo/Booki.png" alt="Booki-site-logo" class="bookiLogo" />
                 <ul class="listHref">
                     <li class="href-item"><a href="#hebergement" class="href-link">Hébergements</a></li>
                     <li class="href-item"><a href="#activites" class="href-link">Activités</a></li>
@@ -31,7 +31,7 @@
             <div class="searchCity">
                 <button type="button" id="btnLocation"><i class="fa-solid fa-location-dot"></i></button>
                 <form>
-                    <input type="text" name="city" id="city" placeholder="Entrer une ville" required />
+                    <input type="text" name="city" id="city" placeholder="Ville" required />
                 </form>
                 <button type="submit" id="btnSearch">
                     <span>Rechercher</span>
@@ -41,15 +41,15 @@
             <div class="filter">
                 <h2 class="filt">Filtres</h2>
                 <div class="listBtnFilters">
-                    <button type="button" class="btnFilter" id="btnEconomique"><i class="fa-solid fa-money-bill-wave"></i><h2>Économique</h2></button>
+                    <button type="button" class="btnFilter" id="btnEconomique"><i class="fa-solid fa-money-bill-wave"></i><span class="money"><strong>Économique</strong></span></button>
                     <button type="button" class="btnFilter" id="btnFamilial"><i class="fa-solid fa-person"></i>
-                        <h2>Famillial</h2>
+                        <span class="family"><strong>Familial</strong></span>
                     </button>
                     <button type="button" class="btnFilter" id="btnRomantique"><i class="fa-solid fa-heart"></i>
-                        <h2>Romantique</h2>
+                        <span class="love"><strong>Romantique</strong></span>
                     </button>
                     <button type="button" class="btnFilter" id="btnPepites"><i class="fa-solid fa-fire"></i>
-                        <h2>Nos pépites</h2>
+                        <span class="prefer"><strong>Nos pépites</strong></span>
                     </button>
                 </div>
             </div>
